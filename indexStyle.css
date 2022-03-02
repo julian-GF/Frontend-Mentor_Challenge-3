@@ -1,0 +1,695 @@
+body{
+    background-color: hsl(220, 27%, 32%);
+}
+
+/* cabecera */
+
+
+#contenedorTodaCalcu{
+    margin-top: 2%;
+   text-align: center;
+   margin-left: 30%;
+   margin-right: 30%;
+   margin-bottom: 0.1%;
+    padding: 3%;
+    padding-bottom: 3.3%;
+}
+
+#cabecera{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 300;
+}
+
+h1{
+    font-weight: 500;
+}
+
+#cabeLadoDerecho{
+    display: flex;
+    flex-direction: row; 
+
+}
+
+#theme{
+    margin-top: 16%;
+}
+
+#labelsCabecera{
+    display: flex;
+    flex-direction: row; 
+
+}
+
+#divRadioButton{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    border-radius: 30px;
+    text-align: center;
+    margin: 6px;
+    padding: 1px;
+    background-color:  hsl(223, 31%, 20%);
+}
+
+.classLblCabe{
+    margin-left: 17%;
+}
+
+.classInputBut{
+margin: 3px;
+border: none;
+background-color: hsl(223, 31%, 20%);
+}
+
+#radio1:checked{
+    border: 1px solid hsl(6, 63%, 50%);
+    background-color: hsl(6, 63%, 50%);
+    box-shadow:none;
+    background-image: none !important;
+
+}
+
+#radio2:checked{
+    border: 1px solid  hsl(25, 98%, 40%);
+    background-color:  hsl(25, 98%, 40%);
+    box-shadow:none;
+    background-image: none !important;
+
+}
+
+#radio3:checked{
+    border: 1px solid hsl(176, 100%, 44%);
+    background-color: hsl(176, 100%, 44%);
+    box-shadow:none;
+    background-image: none !important;
+
+}
+
+
+
+
+#inputsMasLabels{
+    margin-right: 3px;
+    margin-left: 15px;
+}
+
+
+/* visor */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+#inputVisor{
+width: 100%;
+height: 140px;
+border-radius: 7px;
+font-size: 45px;
+text-align: end;
+background-color: hsl(224, 36%, 15%);
+border: 1px solid hsl(224, 36%, 15%);
+color: white;
+font-size: 4.5em;
+font-family: 'Bai Jamjuree', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Readex Pro', sans-serif;
+font-weight: 700;
+padding-right: 6%;
+}
+
+#divVisor{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* tablero */
+
+#tablero{
+    border: 1px solid hsl(223, 31%, 20%);
+    display: grid;
+    grid-template-rows: repeat(5, 4em);
+    grid-template-columns:repeat(4, 7em);
+    grid-column-gap: 2em;
+    grid-row-gap: 1.5em;
+    justify-content: center;
+    background-color:  hsl(223, 31%, 20%);
+    border-radius: 7px;
+    padding: 5% 0 5% 0;
+
+}
+
+#botonesBajo{
+    display: grid;
+    grid-template-rows: 4em;
+    grid-template-columns:16em 16em;
+    grid-column-gap: 2em;
+}
+
+.botones{
+    border: 1px solid hsl(30, 25%, 89%);
+    border-bottom: 5px solid  hsl(28, 16%, 65%) ;
+    background-color: hsl(30, 25%, 89%);
+    border-radius: 10px;
+    font-size: 2.3em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700;
+    color: hsl(221, 14%, 31%);
+}
+
+.botones:hover{
+    background-color: rgb(231, 236, 200);
+}
+
+.botones:active{
+    border-bottom: 0px solid rgb(173, 175, 156) ;
+}
+
+.btnIgual{
+    background-color: hsl(6, 63%, 50%);
+    border: 1px solid hsl(6, 63%, 50%);
+    border-bottom: 5px solid  hsl(6, 70%, 34%);
+    color: white;
+}
+
+.btnIgual:hover{
+    background-color: hsl(6, 72%, 40%);
+}
+
+.btnDelRest{
+    background-color: hsl(225, 21%, 49%);
+    border: 1px solid hsl(225, 21%, 49%);
+    border-bottom: 5px solid  hsl(224, 28%, 35%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+
+}
+
+.btnDelRest:hover{
+    background-color: hsl(224, 26%, 46%);
+}
+
+
+/*footer*/
+
+.attribution{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*---------------- theme2--------------*/
+
+
+
+
+
+.body2{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.visor2{
+    background-color: hsl(0, 0%, 93%) !important;
+    border: 1px solid hsl(0, 0%, 93%) !important; 
+    color:  hsl(60, 10%, 19%) !important;
+}
+
+.cabecera2{
+    color: hsl(60, 10%, 19%) !important;
+    font-weight: 900 !important;
+}
+
+
+.divRadioButton2{
+        background-color:  hsl(0, 5%, 81%) !important ;
+    }
+    
+
+.classInputBut2{
+    background-color: hsl(0, 5%, 81%);
+    }
+    
+
+.tablero2{
+        border: 1px solid hsl(0, 5%, 81%) !important;
+        background-color:  hsl(0, 5%, 81%) !important;
+
+}
+
+.botones2{
+    border: 1px solid hsl(45, 7%, 89%);
+    border-bottom: 5px solid  hsl(35, 11%, 61%) ;
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+}
+
+.botones2:hover{
+    background-color: hsl(46, 100%, 93%);
+}
+
+.botones2:active{
+    border-bottom: 0px solid rgb(173, 175, 156) ;
+}
+
+.btnIgual2{
+    background-color: hsl(25, 98%, 40%);
+    border: 1px solid hsl(25, 98%, 40%);
+    border-bottom: 5px solid  hsl(25, 99%, 27%);
+}
+
+.btnIgual2:hover{
+    background-color: hsl(25, 88%, 45%);
+}
+
+.btnDelRest2{
+    background-color: hsl(185, 42%, 37%);
+    border: 1px solid hsl(185, 42%, 37%);
+    border-bottom: 5px solid  hsl(185, 58%, 25%);
+    color: white;
+
+}
+
+.btnDelRest2:hover{
+    background-color: hsl(185, 49%, 42%);
+}
+
+
+
+/*---------------- theme3--------------*/
+
+.body3{
+    background-color: hsl(268, 75%, 9%);
+}
+
+.visor3{
+    background-color: hsl(268, 71%, 12%) !important;
+    border: 1px solid hsl(268, 71%, 12%) !important; 
+    color:  hsl(52, 100%, 62%)!important;
+}
+
+.cabecera3{
+    color: hsl(52, 100%, 62%) !important;
+    font-weight: 900 !important;
+}
+
+
+.divRadioButton3{
+        background-color:  hsl(268, 71%, 12%) !important ;
+    }
+    
+
+.classInputBut3{
+    background-color: hsl(268, 71%, 12%);
+    }
+
+    
+
+.tablero3{
+        border: 1px solid hsl(268, 71%, 12%) !important;
+        background-color:  hsl(268, 71%, 12%) !important;
+
+}
+
+.botones3{
+    border: 1px solid hsl(268, 47%, 21%);
+    border-bottom: 5px solid  hsl(290, 70%, 36%) ;
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+}
+
+.botones3:hover{
+    background-color: hsl(267, 52%, 26%);
+}
+
+.botones3:active{
+    border-bottom: 0px ;
+}
+
+.btnIgual3{
+    background-color: hsl(176, 100%, 44%);
+    border: 1px solid hsl(176, 100%, 44%);
+    border-bottom: 5px solid  hsl(177, 92%, 70%);
+    color:  hsl(198, 20%, 13%);
+}
+
+.btnIgual3:hover{
+    background-color: hsl(176, 98%, 47%);
+}
+
+.btnDelRest3{
+    background-color: hsl(281, 89%, 26%);
+    border: 1px solid hsl(281, 89%, 26%);
+    border-bottom: 5px solid  hsl(285, 91%, 52%);
+    color: white;
+
+}
+
+.btnDelRest3:hover{
+    background-color: hsl(281, 89%, 31%);
+}
+
+
+
+
+
+
+
+/*--------------medias queries-----------*/
+
+/*pantallas mas grandes que tablets*/
+
+@media only screen and ( max-width:1650px ) 
+{
+
+    #contenedorTodaCalcu{
+        margin-top: 2%;
+       margin-left: 28%;
+       margin-right: 28%;
+        padding: 3%;
+        padding-bottom: 3.3%;
+    }
+
+}
+
+@media only screen and ( max-width:1485px ) 
+{
+
+    #contenedorTodaCalcu{
+        margin-top: 2%;
+       margin-left: 25%;
+       margin-right: 25%;
+        padding: 3%;
+        padding-bottom: 3.3%;
+    }
+
+}
+
+
+@media only screen and ( max-width:1320px ) 
+{
+
+    #contenedorTodaCalcu{
+        margin-top: 2%;
+       margin-left: 22%;
+       margin-right: 22%;
+        padding: 3%;
+        padding-bottom: 3.3%;
+    }
+
+}
+
+
+@media only screen and ( max-width:1200px ) 
+{
+
+    #contenedorTodaCalcu{
+        margin-top: 2%;
+       margin-left: 18%;
+       margin-right: 18%;
+        padding: 3%;
+        padding-bottom: 3.3%;
+    }
+
+}
+
+
+
+
+/*tablet*/
+
+@media only screen and ( max-width:1000px ) 
+{
+
+    #contenedorTodaCalcu{
+        margin-top: 1%;
+       margin-left: 10%;
+       margin-right: 10%;
+        padding: 3%;
+        padding-bottom: 3.3%;
+    }
+
+}
+
+@media only screen and ( max-width:800px ) 
+{
+
+    #contenedorTodaCalcu{
+        margin-top: 1%;
+       margin-left: 5%;
+       margin-right: 5%;
+        padding: 3%;
+        padding-bottom: 3.3%;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:660px ) 
+{
+
+    #contenedorTodaCalcu{
+        margin-top: 4%;
+       margin-left: 2%;
+       margin-right: 2%;
+        padding: 3%;
+        padding-bottom: 5%;
+    }
+
+    /* cabecera */
+    h1{
+        margin-top: 2%;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+
+
+    /* visor */
+
+
+    #inputVisor{
+        width: 100%;
+        height: 110px;
+        border-radius: 10px;
+        font-size: 4em;
+        padding-right: 6%;
+        }
+        
+        #divVisor{
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    
+        /* tablero */
+
+    #tablero{
+    grid-template-rows: repeat(5, 4.5em);
+    grid-template-columns:repeat(4, 6em);
+    grid-column-gap: 1.2em;
+    grid-row-gap: 1.2em;
+    border-radius: 10px;
+    }
+
+    #botonesBajo{
+        grid-template-rows: 4.3em;
+        grid-template-columns:13em 13em;
+        grid-column-gap: 1.5em;
+    }
+    
+    .botones{
+        font-size: 2em;
+    }
+
+    .btnIgual{
+        font-size: 1.5em;
+    }
+    
+    .btnDelRest{
+        font-size: 1.3em;
+        font-weight: 500;
+    
+    }
+
+    /* footer*/
+    .attribution{
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/*celular*/
+@media only screen and (max-width:500px ) 
+{
+
+    #contenedorTodaCalcu{
+        margin-top: 4%;
+       margin-left: 2%;
+       margin-right: 2%;
+        padding: 3%;
+        padding-bottom: 5%;
+    }
+
+    /* cabecera */
+    h1{
+        margin-top: 2%;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+
+
+    /* visor */
+
+
+    #inputVisor{
+        width: 100%;
+        height: 110px;
+        border-radius: 10px;
+        font-size: 4em;
+        padding-right: 6%;
+        }
+        
+        #divVisor{
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    
+        /* tablero */
+
+    #tablero{
+    grid-template-rows: repeat(5, 4.3em);
+    grid-template-columns:repeat(4, 4em);
+    grid-column-gap: 0.9em;
+    grid-row-gap: 0.9em;
+    border-radius: 10px;
+    }
+
+    #botonesBajo{
+        grid-template-rows: 4.3em;
+        grid-template-columns:9em 9em;
+        grid-column-gap: 1em;
+    }
+    
+    .botones{
+        font-size: 2em;
+    }
+
+    .btnIgual{
+        font-size: 1.5em;
+    }
+    
+    .btnDelRest{
+        font-size: 1.3em;
+        font-weight: 500;
+    
+    }
+
+    /* footer*/
+    .attribution{
+        font-size: 13px;
+    }
+
+}
+
+
+@media only screen and (max-width:280px ) 
+{
+    #contenedorTodaCalcu{
+        margin-top: 4%;
+       margin-left: 2%;
+       margin-right: 2%;
+        padding: 3%;
+        padding-bottom: 5%;
+    }
+
+    /* cabecera */
+    h1{
+        margin-top: 6%;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    #theme{
+        margin-top: 18%;
+    }
+
+    #cabecera{
+        font-size: 15px;
+    }
+
+    /* visor */
+
+
+    #inputVisor{
+        width: 100%;
+        height: 90px;
+        border-radius: 10px;
+        font-size: 3em;
+        padding-right: 6%;
+        }
+        
+        #divVisor{
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    
+        /* tablero */
+
+    #tablero{
+    grid-template-rows: repeat(5, 3.1em);
+    grid-template-columns:repeat(4, 2.9em);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    border-radius: 10px;
+    }
+
+    #botonesBajo{
+        grid-template-rows: 3.5em;
+        grid-template-columns: 6.3em 6.3em;
+        grid-column-gap: 0.6em;
+    }
+    
+    .botones{
+        font-size: 1.5em;
+    }
+
+    .btnIgual{
+        font-size: 1.5em;
+    }
+    
+    .btnDelRest{
+        font-size: 1em;
+        font-weight: 500;
+    
+    }
+
+    /* footer*/
+    .attribution{
+        font-size: 10px;
+    }
+}
